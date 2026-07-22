@@ -16,7 +16,7 @@ test("Agent model selection shows empty state when no models are available", asy
   });
 
   await recorder.step("Navigate to the agent configuration page", async () => {
-    await page.goto("/");
+    await page.goto("/workspace/test-workspace/settings/agent-config");
   });
 
   await recorder.step("Open the provider chooser", async () => {
